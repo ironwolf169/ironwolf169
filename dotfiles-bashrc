@@ -17,7 +17,6 @@ alias delete='rm -R'
 
 alias halt='shutdown now'" | tee -a ~/.bashrc
 
-
-&& echo 'finished moving all alias'
+echo 'finished moving all alias'
 
 
