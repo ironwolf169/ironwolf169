@@ -13,19 +13,10 @@ alias remove='sudo pacman -Rs'
 
 alias get='git clone'
 
+alias delete='rm -R'
+
 alias halt='shutdown now'
 
-#aur packages 
-
-alias chrome='https://aur.archlinux.org/google-chrome.git'
-
-alias minecraft='https://aur.archlinux.org/minecraft-launcher.git'
-
-alias balena-etcher='https://aur.archlinux.org/balena-etcher.git'
-
-alias parsec-bin='https://aur.archlinux.org/parsec-bin.git'
-
-alias timeshift='https://aur.archlinux.org/timeshift.git'" | tee -a ~/.bashrc
 
 && echo 'finished moving all alias'
 
