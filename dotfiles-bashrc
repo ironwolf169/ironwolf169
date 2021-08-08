@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This will move my dot files to my arch install
+#This will replace everything in my .bashrc, and add my personal alias
 
 #.bashrc
 echo"# If not running interactively, don't do anything
@@ -8,6 +8,8 @@ echo"# If not running interactively, don't do anything
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+#commands
 
 alias update='sudo pacman -Syu'
 
@@ -17,4 +19,18 @@ alias remove='sudo pacman -Rs'
 
 alias get='git clone'
 
-alias halt='shutdown now'" >> ~/$USER/.bashrc
+alias halt='shutdown now'
+
+#aur packages 
+
+alias chrome='https://aur.archlinux.org/google-chrome.git'
+
+alias minecraft='https://aur.archlinux.org/minecraft-launcher.git'
+
+alias balena-etcher='https://aur.archlinux.org/balena-etcher.git'
+
+alias parsec-bin='https://aur.archlinux.org/parsec-bin.git'
+
+alias timeshift='https://aur.archlinux.org/timeshift.git'" | tee ~/$USER/.bashrc
+
+source .bashrc
