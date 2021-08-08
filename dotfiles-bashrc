@@ -15,7 +15,7 @@ alias get='git clone'
 
 alias delete='rm -R'
 
-alias halt='shutdown now' | tee -a ~/.bashrc
+alias halt='shutdown now'" | tee -a ~/.bashrc
 
 
 && echo 'finished moving all alias'
