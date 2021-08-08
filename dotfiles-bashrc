@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#This will move my dot files to my arch install
+
+#.bashrc
+echo"# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+alias update='sudo pacman -Syu'
+
+alias install='sudo pacman -S'
+
+alias remove='sudo pacman -Rs'
+
+alias get='git clone'
+
+alias halt='shutdown now'" >> ~/$USER/.bashrc
