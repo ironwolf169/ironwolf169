@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This will install all my favorite programs on arch linux
+
+echo'installing programs now...' 
+
+pacman -S barrier blender obs-studio gimp discord grub-customizer keepass libreoffice-fresh lutris krita qalculate-gtk teamspeak3 openbox thunderbird 
+
+echo'Finished installing programs'
