@@ -27,6 +27,6 @@ alias parsec-bin='https://aur.archlinux.org/parsec-bin.git'
 
 alias timeshift='https://aur.archlinux.org/timeshift.git'" | tee -a ~/.bashrc
 
-source .bashrc && echo'Finished moving all alias'
+&& echo 'finished moving all alias'
 
 
