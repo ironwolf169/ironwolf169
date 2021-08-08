@@ -3,13 +3,7 @@
 #This will replace everything in my .bashrc, and add my personal alias
 
 #.bashrc
-echo"# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-
-#commands
+echo "#commands
 
 alias update='sudo pacman -Syu'
 
@@ -31,6 +25,6 @@ alias balena-etcher='https://aur.archlinux.org/balena-etcher.git'
 
 alias parsec-bin='https://aur.archlinux.org/parsec-bin.git'
 
-alias timeshift='https://aur.archlinux.org/timeshift.git'" | tee ~/$USER/.bashrc
+alias timeshift='https://aur.archlinux.org/timeshift.git'" | tee -a ~/$USER/.bashrc
 
 source .bashrc
